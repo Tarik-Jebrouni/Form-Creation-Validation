@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Display feedback
-        feedbackDiv.style.display = "block";
+        // Display feedback
+        feedbackDiv.style.display = "block"; // Make the div visible
         if (isValid) {
             feedbackDiv.textContent = "Registration successful!";
             feedbackDiv.style.color = "#28a745"; // Green
-            feedbackDiv.style.backgroundColor = "#d4edda";
         } else {
             feedbackDiv.innerHTML = messages.join("<br>");
-            feedbackDiv.style.color = "#d8000c"; // Red
-            feedbackDiv.style.backgroundColor = "#ffbaba";
+            feedbackDiv.style.color = "#dc3545"; // Red
         }
+
     });
 });
